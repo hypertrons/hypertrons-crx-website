@@ -56,7 +56,7 @@ If somebody claims an issue but doesn't follow up for more than two weeks, it's 
 
 ### 2. Fork and clone the repository
 
-Visit [hypertrons/hypertrons-crx][repo] repo and make your copy of the repository by **forking** it.
+Visit [hypertrons/hypertrons-crx-website][repo] repo and make your copy of the repository by **forking** it.
 
 And **clone** your copy of the repository to local, like :
 
@@ -114,7 +114,7 @@ git push -f origin branch-name
 
 ### 9. Create a Pull Request
 
-In GitHub, send a pull request to `hypertrons:hypertrons-crx`.
+In GitHub, send a pull request to `hypertrons:hypertrons-crx-website`.
 
 Please sign our [Contributor License Agreement (CLA)](#cla) before sending PRs.
 
