@@ -14,3 +14,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 * [Wence-May](https://github.com/Wence-May)
 * [@heming6666](https://github.com/heming6666/)
+* [zhuxiangning](https://github.com/zhuxiangning)
