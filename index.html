@@ -1,306 +1,140 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="/umi.31c63b15.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>Hypercrx</title><link rel="icon" href="/favicon.png" type="image/x-icon"><script>window.routerBase = "/";</script></head><body><noscript>Out-of-the-box mid-stage front/design solution!</noscript><div id="root"><style>.page-loading-warp {
+          padding: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .ant-spin {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+          font-variant: tabular-nums;
+          line-height: 1.5;
+          list-style: none;
+          -webkit-font-feature-settings: 'tnum';
+          font-feature-settings: 'tnum';
+          position: absolute;
+          display: none;
+          color: #1890ff;
+          text-align: center;
+          vertical-align: middle;
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+        }
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        .ant-spin-spinning {
+          position: static;
+          display: inline-block;
+          opacity: 1;
+        }
 
-    <link rel="shortcut icon" href="./Assets/128.png">
+        .ant-spin-dot {
+          position: relative;
+          display: inline-block;
+          font-size: 20px;
+          width: 20px;
+          height: 20px;
+        }
 
-    <title> Hypertrons Extension - Installation Guide </title>
+        .ant-spin-dot-item {
+          position: absolute;
+          display: block;
+          width: 9px;
+          height: 9px;
+          background-color: #1890ff;
+          border-radius: 100%;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+          -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          opacity: 0.3;
+          -webkit-animation: antSpinMove 1s infinite linear alternate;
+          animation: antSpinMove 1s infinite linear alternate;
+        }
 
-    <link rel="stylesheet" href="./Assets/global-bd5f039d5d.css">
-    <link rel="stylesheet" href="./Assets/index-layout-v2-ff2b59b562.css">
-    <link rel="stylesheet" href="./Assets/index-global-new-5c66a164be.css">
-    <link rel="stylesheet" href="./Assets/download-e41482da14.css">
+        .ant-spin-dot-item:nth-child(1) {
+          top: 0;
+          left: 0;
+        }
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-</head>
+        .ant-spin-dot-item:nth-child(2) {
+          top: 0;
+          right: 0;
+          -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+        }
 
-<body>
-    <section id="header-root">
-        <header id="index-header-new" class=" ">
-            <div class="header-inner">
-                <!-- TODO: put logo on the top left -->
-                <!-- <a class="logo" href="https://github.com/hypertrons/hypertrons-crx">
-                    <div class="bg-white-header ">
-                        <h1 class=" ">
-                            <img class="logo-icon" src="./Assets/128.png" alt="Installation Guidence">
-                        </h1>
-                        <p class="page-title hide"></p>
-                    </div>
-                </a> -->
-                <div class="right-box ">
-                    <ul class="header-menu">
-                        <!-- TODO: fill in this url -->
-                        <li class="index "><a href="./index.html">Home</a></li>
-                        <li class=""><a href="https://github.com/hypertrons/hypertrons-crx">Repository</a></li>
-                        <li class=""><a href="https://github.com/hypertrons/hypertrons-crx">About us</a></li>
-                        <li class="tools " view-ref="toolBtn">
-                            <span class="text">More</span><span class="arrow"></span>
-                            <ul class="tool-menu hide">
-                                <!-- TODO: add list items -->
-                                <!-- <li><a href="https://github.com/hypertrons/hypertrons-crx/releases/download/latest/hypertrons.zip" target="_blank">下载zip</a></li>
-                                <li><a href="https://github.com/hypertrons/hypertrons-crx/releases/download/latest/hypertrons.crx" target="_blank">下载crx</a></li> -->
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="action-wrap">
-                        <ul class="header-user-box ">
-                            <li><a id="originRegisterBtn" class="header-btn register" view-ref="registerBtn" href="https://github.com/hypertrons/hypertrons-crx/releases">Download</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
+        .ant-spin-dot-item:nth-child(3) {
+          right: 0;
+          bottom: 0;
+          -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+        }
 
+        .ant-spin-dot-item:nth-child(4) {
+          bottom: 0;
+          left: 0;
+          -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+        }
 
-    <section id="body-root">
+        .ant-spin-dot-spin {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-animation: antRotate 1.2s infinite linear;
+          animation: antRotate 1.2s infinite linear;
+        }
 
-        <section id="head-section">
-            <div class="inner">
-                <h1>Install Hypertrons Extension</h1>
-                <h2>Please select your browser</h2>
-                <ul class="browsers">
-                    <li data-name="chrome" class="active">
-                        <span class="recommend hint">Recommend</span>
-                        <img src="./Assets/logo-browser-chrome-0857504c03.png">Chrome
-                    </li>
-                    <li data-name="edge">
-                        <span class="recommend hint">Recommend</span>
-                        <img src="./Assets/logo-browser-edge-new-2a108a1df4.png">Edge
-                    </li>
-                    <li data-name="360se">
-                        <!-- <span class="recommend hint">Recommend</span> -->
-                        <img src="./Assets/logo-browser-360-54a6d8e78b.png"> 360 Safety Explorar
-                    </li>
-                    <li data-name="360ee">
-                        <!-- <span class="recommend hint">Recommend</span> -->
-                        <img src="./Assets/logo-browser-360js-15447611b8.png"> 360 Speed Explorar
-                    </li>
-                </ul>
+        .ant-spin-lg .ant-spin-dot {
+          font-size: 32px;
+          width: 32px;
+          height: 32px;
+        }
 
+        .ant-spin-lg .ant-spin-dot i {
+          width: 14px;
+          height: 14px;
+        }
 
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .ant-spin-blur {
+            background: #fff;
+            opacity: 0.5;
+          }
+        }
 
-        </section>
-        <section id="guide-section">
-            <section class="inner">
-                <span class="arrow"></span>
-                <section>
-                    <div class="guide for-chrome show">
-                        <!-- for chrome -->
-                        <div class="container">
-                            <div class="row content chrome-guide-content">
-                                <div class="img-list">
-                                    <img src="./Assets/1-1.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/1-2.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/1-3.png">
-                                </div>
-                                <div class="text-box-list">
-                                    <div class="text-box">
-                                        <h3>1.Download</h3>
-                                        <p>Get the latest release from the <span class="green">【Download】</span> entry. </p>
-                                        <p>Download the file "hypertrons.zip", and unzip it to a new folder, for example, named as "hypertrons".</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>2.Manage Extensions</h3>
-                                        <p>Open the <a href="chrome://extensions"><span class="green">plugin management page for Chrome.</span></a></p>
-                                        <p>Turn on the <span class="green">【Developer Mode】</span> button on the top right corner of this page, and then refresh.</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>3.Load from file</h3>
-                                        <p> Click <span class="green">【Load Unpacked】</span>button on the top left, and select the folder where the unzipped files are stored(e.g. the folder "hypertrons").</p>
-                                        <p>Now, the extension can be successfully loaded~ Make sure the switch is on!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="hint foot-hint">Have Problems？<a target="_blank" href="https://github.com/hypertrons/hypertrons-crx/issues">Check out the Issues</a></p>
-                        </div>
-                    </div>
-                </section>
+        @-webkit-keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
 
-                <section>
-                    <!-- for edge -->
-                    <!-- TODO: if it is available in extension stores ... -->
-                    <!-- <div class="row downloads for-edge">
-                        <div class="col">
-                            <a class="btn-wrap-link edge-link" target="_blank" href="https://microsoftedge.microsoft.com/addons/detail/aidjohbjielfdhcaookdaolppglahebo?hl=zh-CN">
-                                应用商店下载
-                            </a>
-                            <p class="version">应用商店最新版本：v7.16.9 <span class="extionsion-version-status-edge"></span></p>
-                        </div>
-                    </div> -->
-                    <div class="guide for-chrome show">
-                        <div class="container">
-                            <div class="row content chrome-guide-content">
-                                <div class="img-list">
-                                    <img src="./Assets/1-1.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/2-2.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/2-3.png">
-                                </div>
-                                <div class="text-box-list">
-                                    <div class="text-box">
-                                        <h3>1.Download</h3>
-                                        <p>Get the latest release from the <span class="green">【Download】</span> entry. </p>
-                                        <p>Download the file "hypertrons.zip", and unzip it to a new folder, for example, named as "hypertrons".</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>2.Manage Extensions</h3>
-                                        <p>Open the <a href="edge://extensions/"><span class="green">plugin management page for Edge.</span></a></p>
-                                        <p>Turn on the <span class="green">【Developer Mode】</span> button on the bottom left corner of this page, and then refresh.</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>3.Load from file</h3>
-                                        <p> Click <span class="green">【Load Unpacked】</span>button on the top right, and select the folder where the unzipped files are stored(e.g. the folder "hypertrons").</p>
-                                        <p>Now, the extension can be successfully loaded~ Make sure the switch is on!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="hint foot-hint">Have Problems？<a target="_blank" href="https://github.com/hypertrons/hypertrons-crx/issues">Check out the Issues</a></p>
-                        </div>
-                    </div>
-                </section>
+        @keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
 
-                <section>
-                    <!-- for 360se -->
-                    <div class="guide for-chrome show">
-                        <div class="container">
-                            <div class="row content chrome-guide-content">
-                                <div class="img-list">
-                                    <img src="./Assets/3-1.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/3-2.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/3-3.png">
-                                </div>
-                                <div class="text-box-list">
-                                    <div class="text-box">
-                                        <h3>1.Download</h3>
-                                        <p>Get the latest release from the <span class="green">【Download】</span> entry. </p>
-                                        <p>Download the file "hypertrons.crx".</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>2.Manage Extensions</h3>
-                                        <p>Open the <a href="se://extensions/"><span class="green">plugin management page for 360 Safety Explorar.</span></a></p>
-                                        <p>Turn on the <span class="green">【Developer Mode】</span> button on the top right corner of this page, and then refresh.</p>
-                                    </div>
-                                    <div class="mid-trans"></div>
-                                    <div class="text-box">
-                                        <h3>3.Load from file</h3>
-                                        <p> Drag the downloaded file "hypertrons.crx" into this page.</p>
-                                        <p>In the pop-up dialog box "Do you want to add Hypertrons?", select 【Add】.</p>
-                                        <p>Now, the extension can be successfully loaded~ Make sure the switch is on!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="hint foot-hint">Have Problems？<a target="_blank" href="https://github.com/hypertrons/hypertrons-crx/issues">Check out the Issues</a></p>
-                        </div>
-                    </div>
-                </section>
+        @-webkit-keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }
 
-                <section>
-                    <!-- for 360ee -->
-                    <div class=" guide for-chrome show">
-                        <div class="container">
-                            <div class="row content chrome-guide-content">
-                                <div class="img-list">
-                                    <img src="./Assets/3-1.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/4-2.png">
-                                    <img class="mid-trans" src="./Assets/arrow-ddac508d2d.svg">
-                                    <img src="./Assets/4-3.png">
-                                </div>
-                                <div class="text-box-list">
-                                    <div class="text-box-list">
-                                        <div class="text-box">
-                                            <h3>1.Download</h3>
-                                            <p>Get the latest release from the <span class="green">【Download】</span> entry. </p>
-                                            <p>Download the file "hypertrons.crx".</p>
-                                        </div>
-                                        <div class="mid-trans"></div>
-                                        <div class="text-box">
-                                            <h3>2.Manage Extensions</h3>
-                                            <p>Open the <a href="chrome://myextensions/extensions"><span class="green">plugin management page for 360 Speed Explorar.</span></a></p>
-                                            <p>Turn on the <span class="green">【Developer Mode】</span> button on the top right corner of this page, and then refresh.</p>
-                                        </div>
-                                        <div class="mid-trans"></div>
-                                        <div class="text-box">
-                                            <h3>3.Load from file</h3>
-                                            <p> Drag the downloaded file "hypertrons.crx" into this page.</p>
-                                            <p>In the pop-up dialog box "Do you want to add Hypertrons?", select 【Add】.</p>
-                                            <p>Now, the extension can be successfully loaded~ Make sure the switch is on!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="hint foot-hint">Have Problems？<a target="_blank" href="https://github.com/hypertrons/hypertrons-crx/issues">Check out the Issues</a></p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </section>
-        </div>
-
-
-
-        <script>
-            $(window).on('load', function() {
-                $("#guide-section section").eq(1).show().siblings().hide();
-            });
-            $(function() {
-                $('.browsers li').click(function() {
-                    $(this).addClass('active').siblings().removeClass('active');
-                    var index = $(this).index();
-                    // console.log(index);
-                    $("#guide-section section").eq(index + 1).show().siblings().hide();
-                })
-            })
-        </script>
-
-        <!--  -->
-    </section>
-
-
-    <!-- TODO: add some Info -->
-    <section id="footer-root">
-        <footer id="index-footer-new" class="">
-            <div class="footer-inner ">
-                <!-- <ul class="footer-info">
-                    <li>Join us：example@email.com</li>
-                    <li>Feedbacks：xxxxx@email.com</li>
-                    <li>Organization: X-Lab</li>
-                </ul> -->
-                <p class="company-name">
-                    <span>Technology spreads civilization, practices synchronize world</span>
-                    <span class="divider"></span>
-                    <span class="power-hint">Copyright 2021@X-Lab</span>
-                </p>
-            </div>
-        </footer>
-    </section>
-
-
-    <section id="templates-wrap">
-
-        <template name="slider"></template>
-
-        <template name="checkbox"></template>
-
-        <template name="alert-dialog"></template>
-
-        <template name="confirm-dialog"></template>
-
-
-    </section>
-
-</html>
+        @keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }</style><div class="page-loading-warp"><div class="ant-spin ant-spin-lg ant-spin-spinning"><span class="ant-spin-dot ant-spin-dot-spin"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span></div></div></div><script src="/umi.f69c223a.js"></script></body></html>
