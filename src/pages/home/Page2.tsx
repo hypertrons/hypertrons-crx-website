@@ -80,7 +80,7 @@ class Page2 extends React.PureComponent {
                               }}
                           >
                               Visit
-                              <a href={"https://chrome.google.com/webstore/detail/hypertrons-crx/jkgfcnkgfapbckbpgobmgiphpknkiljm"}> Chrome Web Store </a>
+                              <a href={"https://chrome.google.com/webstore/detail/hypertrons-crx/ijchfbpdgeljmhnhokmekkecpbdkgabc"}> Chrome Web Store </a>
                               , and click "Add to Chrome".
                           </p>
                           <p
