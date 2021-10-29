@@ -20,10 +20,10 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'global', ...(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/models/global.ts').default) });
-app.model({ namespace: 'login', ...(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/models/login.ts').default) });
-app.model({ namespace: 'setting', ...(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/models/setting.ts').default) });
-app.model({ namespace: 'user', ...(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/models/user.ts').default) });
+  app.model({ namespace: 'global', ...(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/models/global.ts').default) });
+app.model({ namespace: 'login', ...(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/models/login.ts').default) });
+app.model({ namespace: 'setting', ...(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/models/setting.ts').default) });
+app.model({ namespace: 'user', ...(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/models/user.ts').default) });
   return app;
 }
 

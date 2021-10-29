@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import findRoute, {
   getUrlQuery,
-} from '/Users/leofang/OpenSourseProjects/hypertrons-crx-website/node_modules/umi-build-dev/lib/findRoute.js';
+} from '/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/node_modules/umi-build-dev/lib/findRoute.js';
 
 // runtime plugins
 const plugins = require('umi/_runtimePlugin');
@@ -222,7 +222,8 @@ export default (__IS_BROWSER ? null : serverRender);
     // Umi UI Bubble
     require('../../../node_modules/umi-plugin-ui/lib/bubble').default({
       port: 3000,
-      path: '/Users/leofang/OpenSourseProjects/hypertrons-crx-website',
+      path:
+        '/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website',
       currentProject: '',
       isBigfish: undefined,
     });

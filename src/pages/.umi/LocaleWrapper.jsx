@@ -36,7 +36,7 @@ defaultAntd = defaultAntd.default || defaultAntd;
 const localeInfo = {
   'en-US': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/pages/user/login/locales/en-US.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/locales/en-US.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/pages/user/login/locales/en-US.ts')),
     },
     locale: 'en-US',
     antd: require('antd/es/locale-provider/en_US'),
@@ -45,7 +45,7 @@ const localeInfo = {
   },
   'pt-BR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/locales/pt-BR.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/locales/pt-BR.ts')),
     },
     locale: 'pt-BR',
     antd: require('antd/es/locale-provider/pt_BR'),
@@ -54,7 +54,7 @@ const localeInfo = {
   },
   'zh-CN': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/pages/user/login/locales/zh-CN.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/locales/zh-CN.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/pages/user/login/locales/zh-CN.ts')),
     },
     locale: 'zh-CN',
     antd: require('antd/es/locale-provider/zh_CN'),
@@ -63,7 +63,7 @@ const localeInfo = {
   },
   'zh-TW': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/pages/user/login/locales/zh-TW.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/locales/zh-TW.ts')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/pages/user/login/locales/zh-TW.ts')),
     },
     locale: 'zh-TW',
     antd: require('antd/es/locale-provider/zh_TW'),

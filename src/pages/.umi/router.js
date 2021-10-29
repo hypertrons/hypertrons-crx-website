@@ -8,7 +8,7 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from '/Users/leofang/OpenSourseProjects/hypertrons-crx-website/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from '/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/src/pages/.umi/LocaleWrapper.jsx';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
 
@@ -39,7 +39,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -67,7 +67,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -90,7 +90,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -100,7 +100,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/leofang/OpenSourseProjects/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/zhuxiangning/Desktop/X-lab/github_hypertrons/hypertrons-crx-website/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),

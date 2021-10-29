@@ -1,6 +1,6 @@
 ## Hypercrx Website
 
-Content of https://hypertrons.github.io/hypertrons-crx-website/ website.
+Content of https://crx.hypertrons.io/ website.
 
 ## What is Hypercrx?
 
