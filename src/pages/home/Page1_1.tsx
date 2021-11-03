@@ -122,7 +122,7 @@ class Page1 extends React.PureComponent {
                             >
                                 <Col span={4}>
                                     <p>
-                                        <img src='https://kfcoding.oss-cn-hangzhou.aliyuncs.com/temp/images/newui/ICON%2010%402x.png' height="60px" width="60px" alt="img"
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2010%402x.png' height="60px" width="60px" alt="img"
                                         style={{marginTop: '20px',}}
                                         />
                                     </p>
@@ -169,7 +169,7 @@ class Page1 extends React.PureComponent {
                             >
                                 <Col span={4}>
                                     <p>
-                                        <img src='https://kfcoding.oss-cn-hangzhou.aliyuncs.com/temp/images/newui/ICON%2012%402x.png' height="60px" width="60px" alt="img"
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2012%402x.png' height="60px" width="60px" alt="img"
                                              style={{marginTop: '20px',}}
                                         />
                                     </p>
@@ -226,7 +226,7 @@ class Page1 extends React.PureComponent {
                             >
                                 <Col span={4}>
                                     <p>
-                                        <img src='https://kfcoding.oss-cn-hangzhou.aliyuncs.com/temp/images/newui/ICON%2010%402x.png' height="60px" width="60px" alt="img"
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2010%402x.png' height="60px" width="60px" alt="img"
                                              style={{marginTop: '20px',}}
                                         />
                                     </p>
@@ -273,7 +273,7 @@ class Page1 extends React.PureComponent {
                             >
                                 <Col span={4}>
                                     <p>
-                                        <img src='https://kfcoding.oss-cn-hangzhou.aliyuncs.com/temp/images/newui/ICON%2012%402x.png' height="60px" width="60px" alt="img"
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2012%402x.png' height="60px" width="60px" alt="img"
                                              style={{marginTop: '20px',}}
                                         />
                                     </p>
