@@ -80,7 +80,7 @@ class Page2 extends React.PureComponent {
                               }}
                           >
                               Visit
-                              <a href={"https://chrome.google.com/webstore/detail/hypertrons-crx/ijchfbpdgeljmhnhokmekkecpbdkgabc"}> Chrome Web Store </a>
+                              <a href={"https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc"}> Chrome Web Store </a>
                               , and click "Add to Chrome".
                           </p>
                           <p
@@ -111,7 +111,7 @@ class Page2 extends React.PureComponent {
                               }}
                           >
                               Visit
-                              <a href={"https://microsoftedge.microsoft.com/addons/search/hypertrons-crx"}> Edge Extensions Home </a>
+                              <a href={"https://microsoftedge.microsoft.com/addons/detail/hypercrx/lbbajaehiibofpconjgdjonmkidpcome"}> Edge Extensions Home </a>
                                   , and click "Get".
                           </p>
                       </Col>

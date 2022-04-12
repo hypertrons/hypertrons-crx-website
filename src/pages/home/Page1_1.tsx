@@ -304,6 +304,110 @@ class Page1 extends React.PureComponent {
                             </Row>
                         </Col>
                     </Row>
+                    <Row
+                        type="flex"
+                        justify="space-around"
+                        align="middle"
+                        style={{
+                            height: '600px',
+                            paddingTop: '4%',
+                        }}
+                    >
+                        <Col span={12}
+                             style={{ paddingRight: '5%'}}
+                        >
+                          <span>
+                              <img src={"https://hypertrons.oss-cn-shanghai.aliyuncs.com/images/website_ac%26in_repo.gif"} height="100%" width="100%" alt="gif" />
+                          </span>
+                            <Row
+                                // type="flex"
+                                justify="space-around"
+                                align="middle"
+                                style={{
+                                    height: '300px',
+                                    marginTop: '30px',
+                                }}
+                            >
+                                <Col span={4}>
+                                    <p>
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2010%402x.png' height="60px" width="60px" alt="img"
+                                             style={{marginTop: '20px',}}
+                                        />
+                                    </p>
+                                </Col>
+                                <Col span={18}>
+                                    <p
+                                        style={{
+                                            fontFamily: 'PingFangSC-Medium',
+                                            fontSize: '20px',
+                                            color: 'black',
+                                            // marginTop:'5%',
+                                        }}
+                                    >
+                                        Project Activity & Influence Trend
+                                    </p>
+                                    <p
+                                        style={{
+                                            opacity: '0.8',
+                                            fontFamily: 'PingFangSC',
+                                            fontSize: '14px',
+                                            color: 'black',
+                                            lineHeight: '26px',
+                                        }}
+                                    >
+                                        Project Activity & Influence Trend graph depicts the change in activity and influence since the project's inception. You can select one of the metrics to view, and switch the timeline to see the full change in the metrics or focus on the most recent months of data.
+                                    </p>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col span={12}
+                             style={{ paddingLeft: '5%'}}
+                        >
+                          <span>
+                              <img src={"https://hypertrons.oss-cn-shanghai.aliyuncs.com/images/website_ac%26in_dev.gif"} height="100%" width="100%" alt="gif" />
+                          </span>
+                            <Row
+                                // type="flex"
+                                justify="space-around"
+                                // align="middle"
+                                style={{
+                                    height: '300px',
+                                    marginTop: '30px',
+                                }}
+                            >
+                                <Col span={4}>
+                                    <p>
+                                        <img src='https://hsd-kfcoding.oss-cn-shanghai.aliyuncs.com/temp/images/newui/ICON%2012%402x.png' height="60px" width="60px" alt="img"
+                                             style={{marginTop: '20px',}}
+                                        />
+                                    </p>
+                                </Col>
+                                <Col span={18}>
+                                    <p
+                                        style={{
+                                            fontFamily: 'PingFangSC-Medium',
+                                            fontSize: '20px',
+                                            color: 'black',
+                                            // marginTop:'5%',
+                                        }}
+                                    >
+                                        Developer's Activity & Influence Trend
+                                    </p>
+                                    <p
+                                        style={{
+                                            opacity: '0.8',
+                                            fontFamily: 'PingFangSC',
+                                            fontSize: '14px',
+                                            color: 'black',
+                                            lineHeight: '26px',
+                                        }}
+                                    >
+                                        The Developer Activity and Influence Trend chart depicts changes in developer activity and influence from 15 years to the present. You can select one of the metrics to view, and switch the timeline to see an overview of all changes in the metrics or focus on the most recent months of data.
+                                    </p>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
                 </div>
             </div>
         );

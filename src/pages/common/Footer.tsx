@@ -8,7 +8,7 @@ class FooterView extends React.Component {
           <Footer style={{ textAlign: "center" }}>
               <br />
               <Fragment>
-                  Technology spreads civilization, practices synchronize world.   <Icon type="copyright" />   2021 X-lab
+                  Technology spreads civilization, practices synchronize world.   <Icon type="copyright" />   2022 X-lab
               </Fragment>
               <br />
               { /*<a href="http://www.miitbeian.gov.cn">沪ICP备18019397号</a>*/ }
