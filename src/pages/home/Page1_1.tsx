@@ -355,7 +355,7 @@ class Page1 extends React.PureComponent {
                                             lineHeight: '26px',
                                         }}
                                     >
-                                        Project Activity & Influence Trend graph depicts the change in activity and influence since the project's inception. You can select one of the metrics to view, and switch the timeline to see the full change in the metrics or focus on the most recent months of data.
+                                        The Project Activity and Influence Trend chart presents how the two metrics evolve since 2015. In the chart, you can zoom and drag using your mouse or touchpad, and you can toggle either of the data by clicking the legend buttons as well.
                                     </p>
                                 </Col>
                             </Row>
@@ -402,7 +402,7 @@ class Page1 extends React.PureComponent {
                                             lineHeight: '26px',
                                         }}
                                     >
-                                        The Developer Activity and Influence Trend chart depicts changes in developer activity and influence from 15 years to the present. You can select one of the metrics to view, and switch the timeline to see an overview of all changes in the metrics or focus on the most recent months of data.
+                                        The Developer Activity and Influence Trend chart presents how the two metrics evolve since 2015. In the chart, you can zoom and drag using your mouse or touchpad, and you can toggle either of the data by clicking the legend buttons as well.
                                     </p>
                                 </Col>
                             </Row>
