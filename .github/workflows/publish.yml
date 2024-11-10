@@ -1,0 +1,36 @@
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup node 18 env
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: "npm"
+
+      - name: build
+        run: |
+          git config --global url."https://github.com/".insteadOf git://github.com/
+          npm install
+          npm run build
+
+      - name: Publish to OSS
+        uses: tvrcgo/oss-action@master
+        with:
+          key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          region: ${{ secrets.OSS_REGION }}
+          bucket: ${{ secrets.OSS_BUCKET }}
+          assets: |
+            ./build/**:${{ secrets.OSS_TARGET_PATH }}

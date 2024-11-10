@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docSidebar.category.data_sources": {
+    "message": "Data Sources",
+    "description": "The label for category metrics in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.metrics": {
+    "message": "Metrics",
+    "description": "The label for category metrics in sidebar docSidebar"
+  },
+  "sidebar.docSidebar.category.openrank": {
+    "message": "OpenRank",
+    "description": "The label for category openrank in sidebar docSidebar"
+  },
+  "sidebar.userDocSidebar.category.downstream": {
+    "message": "Downstream Apps",
+    "description": "The label for category downstream in sidebar userDocSidebar"
+  },
+  "sidebar.userDocSidebar.link.PolarDBDashboard": {
+    "message": "PolarDB Dashboard",
+    "description": "The label for link PolarDBDashboard in sidebar userDocSidebar"
+  },
+  "sidebar.userDocSidebar.link.OpenAtomDashboard": {
+    "message": "OpenAtom Dashboard",
+    "description": "The label for link OpenAtomDashboard in sidebar userDocSidebar"
+  },
+  "sidebar.developerDocSidebar.category.jupyter_notebook": {
+    "message": "Jupyter Notebook",
+    "description": "The label for category jupyter_notebook in sidebar developerDocSidebar"
+  }
+}

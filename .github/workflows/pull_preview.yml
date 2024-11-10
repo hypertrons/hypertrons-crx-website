@@ -1,0 +1,77 @@
+name: pr_test
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  preview:
+    if: github.event.issue.pull_request
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check comment command
+        uses: actions-ecosystem/action-regex-match@v2
+        id: regex-match
+        with:
+          text: ${{ github.event.comment.body }}
+          regex: '^/preview$'
+
+      - uses: actions/github-script@v3
+        id: get-pr
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        with:
+          script: |
+            const request = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            }
+            core.info(`Getting PR #${request.pull_number} from ${request.owner}/${request.repo}`)
+            try {
+              const result = await github.pulls.get(request)
+              return result.data
+            } catch (err) {
+              core.setFailed(`Request failed with error ${err}`)
+            }
+
+      - name: Check out pull request head
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ fromJSON(steps.get-pr.outputs.result).head.repo.full_name }}
+          ref: ${{ fromJSON(steps.get-pr.outputs.result).head.sha }}
+
+      - name: Setup node 18 env
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: "npm"
+
+      - name: Build the website
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        run: |
+          git config --global url."https://github.com/".insteadOf git://github.com/
+          npm install
+          PULL_NUM=${{ github.event.issue.number }} npm run build
+
+      - name: Upload to OSS
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        uses: tvrcgo/oss-action@master
+        with:
+          key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          region: ${{ secrets.OSS_REGION }}
+          bucket: ${{ secrets.OSS_BUCKET }}
+          assets: |
+            ./build/**:${{ secrets.OSS_TARGET_PATH }}pull_${{ github.event.issue.number }}/
+
+      - name: Create comment
+        if: ${{ steps.regex-match.outputs.match != '' }}
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: 🪧The website for this PR is deployed at https://hypercrx.cn${{ secrets.OSS_TARGET_PATH }}pull_${{ github.event.issue.number }}/

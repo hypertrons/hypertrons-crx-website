@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "HyperCRX",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "HyperCRX Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.docs": {
+    "message": "文档",
+    "description": "Navbar item with label docs"
+  },
+  "item.label.blog": {
+    "message": "博客",
+    "description": "Navbar item with label blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.userDocs": {
+    "message": "用户文档",
+    "description": "Navbar item with label userDocs"
+  },
+  "item.label.devDocs": {
+    "message": "开发者文档",
+    "description": "Navbar item with label devDocs"
+  }
+}

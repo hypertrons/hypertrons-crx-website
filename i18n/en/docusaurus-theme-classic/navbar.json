@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "HyperCRX",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "HyperCRX Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.docs": {
+    "message": "Docs",
+    "description": "Navbar item with label docs"
+  },
+  "item.label.blog": {
+    "message": "Blog",
+    "description": "Navbar item with label blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.userDocs": {
+    "message": "User Docs",
+    "description": "Navbar item with label userDocs"
+  },
+  "item.label.devDocs": {
+    "message": "Developer Docs",
+    "description": "Navbar item with label devDocs"
+  }
+}
