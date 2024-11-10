@@ -40,7 +40,7 @@ const config: Config = {
       'classic',
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
