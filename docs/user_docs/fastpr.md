@@ -4,8 +4,25 @@ FastPR 是一项旨在简化开源项目贡献流程的功能。用户可以直�
 
 ## 目前配置网站
 
-- https://www.x-lab.info/oss101-bok/
-- https://open-digger.cn/
+以下网站已经配置支持 FastPR 功能，用户可以直接在这些页面上编辑内容并提交 PR：
+
+- **[开源软件通识](https://www.x-lab.info/oss101-bok/)**
+  为开源领域的从业者、研究者和爱好者提供全面的开源知识体系。
+
+- **[OpenDigger](https://open-digger.cn/)**
+  开源数据分析平台，提供丰富的开源生态和数据分析功能。
+
+- **[开源书籍](https://kaiyuanshe.github.io/oss-book)**
+  由开源社编写的开源知识普及书籍，内容涵盖开源的基本概念、实践指南和案例分析。
+
+- **[KaiwuDB 文档](https://www.kaiwudb.com/kaiwudb_docs/#/oss_dev)**
+  KaiwuDB 的开发文档，提供数据库使用和开发相关的指导和说明。
+
+---
+
+**需要配置的网站**
+
+如有需要配置的文档项目，欢迎访问 [HyperCRX 项目](https://github.com/hypertrons/hypertrons-crx) 提交 Issue 留言，非盈利项目我们将提供免费支持。
 
 ## 用户指南
 
